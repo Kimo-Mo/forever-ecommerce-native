@@ -1,0 +1,105 @@
+/* Reset */
+main.container {
+  padding-block: 3rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.profile-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Profile Header */
+.profile-header {
+  background-color: #dee2e6;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.profile-header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Profile Details */
+.profile-details {
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.profile-details h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dee2e6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.details-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-item:last-child {
+  border-bottom: none;
+}
+
+/* Order History */
+.order-history {
+  padding: 20px;
+  background-color: #dee2e6;
+}
+
+.order-history ul {
+  list-style: none;
+}
+
+.order-history li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-history li:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  padding: 20px;
+  margin-block: 1rem;
+}
+@media screen and (max-width: 768px) {
+  main.container{
+    max-width: 100%;
+  }
+  .profile-container {
+    width: 95%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
